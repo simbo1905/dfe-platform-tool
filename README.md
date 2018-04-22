@@ -10,4 +10,4 @@ npm i generator-dfe-platform-tool --save-dev
 
 To it is also a Yeoman generator that you can install then invoke with `yo dfe-platform-tool --help`
 
-See the [wiki](https://github.com/DFEAGILEDEVOPS/dfe-platform-tool/wiki) for more information. 
+See the [wiki](https://github.com/simbo1905/openshift-continuous-delivery/wiki) for more information. 
