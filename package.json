@@ -2,10 +2,10 @@
   "name": "generator-dfe-platform-tool",
   "version": "0.9.1",
   "description": "Tooling for managing common tasks on the dfe digital platform.",
-  "license" : "MIT",
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/DFEAGILEDEVOPS/dfe-platform-tool"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DFEAGILEDEVOPS/dfe-platform-tool.git"
   },
   "main": "generators/index.js",
   "keywords": [
@@ -16,17 +16,14 @@
     "bin"
   ],
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "bin": {
     "ocd": "bin/ocd.js"
   },
   "author": "Simon Massey massey1905@gmail.com",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DFEAGILEDEVOPS/dfe-platform-tool.git"
-  },
   "homepage": "https://github.com/DFEAGILEDEVOPS/dfe-platform-tool/wiki",
   "devDependencies": {
     "import-fresh": "^2.0.0",
@@ -46,6 +43,8 @@
     "nconf-yaml": "^1.0.2",
     "path": "^0.12.7",
     "yeoman-generator": "^1.0.0",
-    "yosay": "^2.0.1"
-  }
+    "yosay": "^2.0.1",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
